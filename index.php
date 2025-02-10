@@ -9,12 +9,15 @@
 </head>
 <body>
     <div class="d-flex justify-content-center align-items-center  background-storypath">
-        <div>
-            <h1><span class="color-story">Story</span><span class="color-path">Path</span></h1>
-            <p>Crea, comparte y juega historias interactivas donde tus decisiones cambian el final!!!</p>
-
-            <a href="login.php" class="btn btn-outline-light">Iniciar Sesion</a>
-            <a href="register.php" class="btn btn-outline-secondary">Registrarse</a>
+        <div class="margin-title">
+            <h1><span class="color-story">Story</span><span class="color-path">Path</span>📖</h1>
+            <p class="color-grey">Crea, comparte y juega historias interactivas donde tus decisiones cambian el final!!!</p>
+            
+            <div class="d-flex gap-5 mt-5">
+                <a href="login.php" class="btn iniciar-sesion">Iniciar Sesion</a>
+                <a href="register.php" class="btn registrarse">Registrarse</a>
+            </div>
+            
         </div>
 
         <div>
@@ -23,18 +26,26 @@
         
     </div>
     
-    <div class="mt-5 text-center p-5"> 
+    <div class="text-center p-5"> 
         <h2>Secciones</h2>
-        <div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+        <div class="d-flex gap-5 mt-5 justify-content-center align-items-center">
+            <div>
+                <img src="historias-populares.png" class="w-50" alt="">
+            </div>
+            <div>
+                <img src="crear-historia.png" class="w-50" alt="">
+            </div>
+            <div>
+                <img src="jugar-historia.png" class="w-50" alt="">
+            </div>
+            <div>
+                <img src="ajustes.png" class="w-50" alt="">
+            </div>
         </div>
 
     </div>
 
-    <div class="mt-5 text-center p-5">
+    <div class="text-center p-5">
         <h2>Historias Destacadas</h2>
         <p>Las mejores historias creadas por la comunidad!!</p>
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">

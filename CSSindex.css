@@ -6,6 +6,48 @@
     color: #F4D49B;
 }
 
-.color-patch{
+.color-path{
     color: #4D4D4D;
+}
+
+.iniciar-sesion{
+    border: 3px solid #F4D49B;
+    color: #F4D49B;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.iniciar-sesion:hover{
+    border: 3px solid #F4D49B;
+    color: white;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: #F4D49B;
+}
+
+.registrarse{
+    border: 3px solid #4D4D4D;
+    color: #4D4D4D;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.registrarse:hover{
+    border: 3px solid #4D4D4D;
+    color: white;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: #4D4D4D;
+}
+
+.color-grey{
+    color: #A2A2A2;
+}
+
+.margin-title{
+    margin-right: 15%;
+}
+
+h2{
+    font-size: 40px;
 }
