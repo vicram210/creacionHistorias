@@ -30,13 +30,17 @@
         <h2>Secciones</h2>
         <div class="d-flex gap-5 mt-5 justify-content-center align-items-center">
             <div>
+                <a href="catalogo.php">
                 <img src="historias-populares.png" class="w-50" alt="">
+                </a>
             </div>
             <div>
                 <img src="crear-historia.png" class="w-50" alt="">
             </div>
             <div>
+                <a href="catalogo.php">
                 <img src="jugar-historia.png" class="w-50" alt="">
+                </a>
             </div>
             <div>
                 <img src="ajustes.png" class="w-50" alt="">
