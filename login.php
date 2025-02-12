@@ -9,7 +9,13 @@
 </head>
 <body>
 
-<div class="container">
+    <div class="align-items-center justify-content-center">
+        <a href="index.php">
+            <img src="logo.png" alt="" class="logo">
+        </a>
+    </div>
+
+    <div class="container">
         <div class="left-section">
             <img src="imagen-iniciar-sesion.png" alt="Ilustración de equipo trabajando">
         </div>
@@ -19,7 +25,7 @@
                 <label for="email">Email</label>
                 <input type="email" id="email" placeholder="Introduce tu email">
                 
-                <div class="d-flex justify-content-between align-items-center password mt-4 mb-4">
+                <div class="d-flex justify-content-between align-items-center password mt-4">
                     <div>
                         <label for="password">Contraseña</label>
                     </div>    
@@ -39,6 +45,7 @@
             </form>
         </div>
     </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
