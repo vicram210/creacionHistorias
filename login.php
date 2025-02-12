@@ -49,5 +49,32 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+    <?php
+    //Quiero que cuando alguien se inicie sesión, se compruebe si el correo y la contraseña coinciden con los guardados en el archivo de texto creado llamado "usuarios.txt"
+    //Para ello, primero debo comprobar si se ha enviado el formulario
+
+    if(isset($_POST['email']) && isset($_POST['password'])){
+        //Si se ha enviado el formulario, guardo los datos en el archivo de texto
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+
+        //Abro el archivo de texto en modo lectura
+        $archivo = fopen("usuarios.txt", "r");
+
+        //Leo el archivo de texto línea a línea
+        while(!feof($archivo)){
+            $linea = fgets($archivo);
+            $datos = explode(";", $linea);
+
+            //Compruebo si el correo y la contraseña coinciden
+            if($datos[0] == $email && $datos[1] == $password){
+                echo "¡Bienvenido!";
+                break;
+            }
+        }
+
+        fclose($archivo);
+    }
+    ?>
 </body>
 </html>

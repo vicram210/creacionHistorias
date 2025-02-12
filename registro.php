@@ -46,6 +46,26 @@
         </div>
     </div>
 
+    <?php
+    //Quiero que cuando alguien se registre, se guarde el correo y la contraseña en un archivo de texto llamado "usuarios.txt"
+    //Para ello, primero debo comprobar si se ha enviado el formulario
+
+    if(isset($_POST['email']) && isset($_POST['password'])){
+        //Si se ha enviado el formulario, guardo los datos en el archivo de texto
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+
+        //Abro el archivo de texto en modo escritura
+        $archivo = fopen("usuarios.txt", "a");
+
+        //Escribo el correo y la contraseña en el archivo de texto
+        fwrite($archivo, $email . "," . $password . "\n");
+
+        //Cierro el archivo de texto
+        fclose($archivo);
+    }
+    ?>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
