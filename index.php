@@ -21,7 +21,7 @@
         </div>
 
         <div>
-            <img src="logo.png" alt="StoryPath" class="d-block w-100 h-100">
+            <img src="./imagenes/logo.png" alt="StoryPath" class="d-block w-100 h-100">
         </div>
         
     </div>
@@ -31,19 +31,19 @@
         <div class="d-flex gap-5 mt-5 justify-content-center align-items-center">
             <div>
                 <a href="catalogo.php">
-                <img src="historias-populares.png" class="w-50" alt="">
+                <img src="./imagenes/historias-populares.png" class="w-50" alt="">
                 </a>
             </div>
             <div>
-                <img src="crear-historia.png" class="w-50" alt="">
+                <img src="./imagenes/crear-historia.png" class="w-50" alt="">
             </div>
             <div>
                 <a href="catalogo.php">
-                <img src="jugar-historia.png" class="w-50" alt="">
+                <img src="./imagenes/jugar-historia.png" class="w-50" alt="">
                 </a>
             </div>
             <div>
-                <img src="ajustes.png" class="w-50" alt="">
+                <img src="./imagenes/ajustes.png" class="w-50" alt="">
             </div>
         </div>
 
@@ -57,17 +57,17 @@
                 <div class="carousel-item active">
                     <div class="row">
                         <div class="col-md-4">
-                            <img src="mario.jpg" class="d-block w-100 h-100" alt="Historia 1">
+                            <img src="./imagenes/mario.jpg" class="d-block w-100 h-100" alt="Historia 1">
                             <div class="carousel-caption d-none d-md-block">
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <img src="cult of the lamb.jpeg" class="d-block w-100 h-100" alt="Historia 2">
+                            <img src="./imagenes/cult of the lamb.jpeg" class="d-block w-100 h-100" alt="Historia 2">
                             <div class="carousel-caption d-none d-md-block">
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <img src="minecraft.jpg" class="d-block w-100 h-100" alt="Historia 3">
+                            <img src="./imagenes/minecraft.jpg" class="d-block w-100 h-100" alt="Historia 3">
                             <div class="carousel-caption d-none d-md-block">
                             </div>
                         </div>
@@ -76,17 +76,17 @@
                 <div class="carousel-item">
                     <div class="row">
                         <div class="col-md-4">
-                            <img src="miedo.jpg" class="d-block w-100 h-100" alt="Historia 4">
+                            <img src="./imagenes/miedo.jpg" class="d-block w-100 h-100" alt="Historia 4">
                             <div class="carousel-caption d-none d-md-block">
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <img src="nemo.jpg" class="d-block w-100 h-100" alt="Historia 5">
+                            <img src="./imagenes/nemo.jpg" class="d-block w-100 h-100" alt="Historia 5">
                             <div class="carousel-caption d-none d-md-block">
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <img src="mates.jpeg" class="d-block w-100 h-100" alt="Historia 6">
+                            <img src="./imagenes/mates.jpeg" class="d-block w-100 h-100" alt="Historia 6">
                             <div class="carousel-caption d-none d-md-block">
                             </div>
                         </div>
