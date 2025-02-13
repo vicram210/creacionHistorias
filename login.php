@@ -9,6 +9,35 @@
 </head>
 <body>
 
+    <div class="menu">
+        <a href="index.php">
+            <img src="./imagenes/logo.png" alt="" class="logo">
+        </a>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="./imagenes/imagen-iniciar-sesion.png" alt="" class="w-100">
+            </div>
+            <div class="col-md-6">
+                <h2 class="text-center">Iniciar Sesion</h2>
+                <form action="login.php" method="POST">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label color-grey">Correo Electronico</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label color-grey">Contraseña</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Iniciar Sesion</button>
+                </form>
+            </div>
+        </div>
+    </div>
     
 
 

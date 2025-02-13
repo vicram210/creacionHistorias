@@ -2,11 +2,7 @@
     width: 100px;
 }
 
-.container{
+.menu{
     text-align: center;
-}
-
-nav{
     background-color: #1C1225;
-    margin: -8px;
 }
