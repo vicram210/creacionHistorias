@@ -1,8 +1,52 @@
-.logo{
+ .logo{
     width: 100px;
 }
 
 .menu{
     text-align: center;
     background-color: #1C1225;
+}
+
+h2{
+    padding-bottom: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden; /* Evita el scroll */
+}
+
+.page-container {
+    display: flex;
+    height: 100vh; /* 100% del viewport height */
+    width: 100vw; /* 100% del viewport width */
+}
+
+.left-half, .right-half {
+    flex: 1; /* Ambas mitades ocupan el 50% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-half {
+    background-color: #1C1225; /* Color oscuro */
+}
+
+.right-half {
+    background-color: white; /* Color claro */
+}
+
+.w-edit{
+    width: 200px;
+}
+
+.edit{
+    margin-top: -100px;
 }

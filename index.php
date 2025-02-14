@@ -16,7 +16,7 @@
             
             <div class="d-flex gap-5 mt-5">
                 <a href="login.php" class="btn iniciar-sesion">Iniciar Sesion</a>
-                <a href="register.php" class="btn registrarse">Registrarse</a>
+                <a href="registro.php" class="btn registrarse">Registrarse</a>
             </div>
             
         </div>
