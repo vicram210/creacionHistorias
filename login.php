@@ -41,6 +41,36 @@
         </div>
     </div>
 
+    <?php
+        session_start();
+
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $email = trim($_POST['email']);
+            $password = trim($_POST['password']); // SIN cifrar
+            $file = "usuarios.txt";
+
+            if (!file_exists($file)) {
+                echo "<script>alert('No hay usuarios registrados.'); window.location='registro.php';</script>";
+                exit();
+            }
+
+            $lines = file($file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+            foreach ($lines as $line) {
+                list($existing_email, $existing_password) = explode('|', $line);
+                
+                // Verificar si el correo existe y la contraseña es exacta
+                if ($email === $existing_email && $password === $existing_password) {
+                    $_SESSION['email'] = $email;
+                    echo "<script>alert('Inicio de sesión exitoso.'); window.location='index.php';</script>";
+                    exit();
+                }
+            }
+
+            echo "<script>alert('Correo o contraseña incorrectos.'); window.location='index.php';</script>";
+        }
+    ?>
+
+
 
 
 
