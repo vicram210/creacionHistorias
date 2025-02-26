@@ -1,1 +1,5 @@
-ramon@gmail.com|qwerty
+ramon@gmail.com|1234
+manuel@gmail.com|1234
+javier@gmail.com|1234
+fabio@gmail.com|1234
+amongus@gmail.com|qwerty
