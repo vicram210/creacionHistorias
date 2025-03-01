@@ -1,5 +1,5 @@
 document.getElementById("registerForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Evita que la página se recargue
+    event.preventDefault();
 
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;

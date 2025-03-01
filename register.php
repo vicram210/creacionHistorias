@@ -1,8 +1,7 @@
 <?php
-header("Content-Type: application/json"); // Responder en formato JSON
+header("Content-Type: application/json");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Leer los datos enviados por fetch()
     $data = json_decode(file_get_contents("php://input"), true);
 
     if (isset($data['email']) && isset($data['password'])) {
@@ -10,12 +9,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $password = trim($data['password']);
         $file = "usuarios.txt";
 
-        // Si el archivo no existe, crearlo vacío
         if (!file_exists($file)) {
             file_put_contents($file, "");
         }
 
-        // Verificar si el correo ya está registrado
         $usuarios = file($file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
         foreach ($usuarios as $usuario) {
             list($existing_email, $existing_password) = explode('|', $usuario);
@@ -25,7 +22,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
         }
 
-        // Guardar el usuario en usuarios.txt en formato email|contraseña
         $guardar = file_put_contents($file, "$email|$password\n", FILE_APPEND);
     } else {
         echo json_encode(["status" => "error", "message" => "Datos incompletos."]);
