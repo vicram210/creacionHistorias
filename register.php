@@ -27,12 +27,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Guardar el usuario en usuarios.txt en formato email|contraseña
         $guardar = file_put_contents($file, "$email|$password\n", FILE_APPEND);
-
-        if ($guardar !== false) {
-            echo json_encode(["status" => "success", "message" => "Usuario registrado correctamente."]);
-        } else {
-            echo json_encode(["status" => "error", "message" => "Error al escribir en usuarios.txt."]);
-        }
     } else {
         echo json_encode(["status" => "error", "message" => "Datos incompletos."]);
     }

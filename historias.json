@@ -1,0 +1,37 @@
+[
+  {
+    "titulo": "La historia de la abuela",
+    "descripcion": "La abuela era una mujer muy sabia que siempre tenia una historia que contar",
+    "foto": "imagenes/abuela.jpg",
+    "autor": "jperez77",
+    "jugando": 5
+  },
+  {
+    "titulo": "La historia del perro",
+    "descripcion": "El perro era un animal muy fiel que siempre estaba al lado de su amo",
+    "foto": "imagenes/perro.jpg",
+    "autor": "mlopez90",
+    "jugando": 3
+  },
+  {
+    "titulo": "La historia del gato",
+    "descripcion": "El gato era un animal muy independiente que siempre estaba en su mundo",
+    "foto": "imagenes/gato.jpg",
+    "autor": "vramirez210",
+    "jugando": 7
+  },
+    {
+        "titulo": "La historia del raton",
+        "descripcion": "El raton era un animal muy astuto que siempre estaba buscando comida",
+        "foto": "imagenes/raton.jpg",
+        "autor": "amartinez24",
+        "jugando": 2
+    },
+    {
+        "titulo": "La historia del leon",
+        "descripcion": "El leon era un animal muy fuerte que siempre estaba al mando de su manada",
+        "foto": "imagenes/leon.jpg",
+        "autor": "lgarcia65",
+        "jugando": 4
+    }
+]

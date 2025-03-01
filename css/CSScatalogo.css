@@ -1,8 +1,32 @@
-.logo{
-    width: 100px;
+.logo {
+  width: 100px;
 }
 
-.menu{
-    text-align: center;
-    background-color: #1C1225;
+.menu {
+  text-align: center;
+  background-color: #1c1225;
+}
+
+.card {
+  margin-top: 50px;
+  margin-left: 10px;
+  padding: 10px;
+  background-color: #1c1225;
+  color: white;
+}
+
+.info {
+  background-color: #1c1225;
+  color: white;
+  font-size: 0.875rem;
+}
+
+.custom-card {
+  width: 25rem;
+}
+
+.button-edit {
+  border-radius: 20px;
+  float: right;
+  padding: 5px 20px;
 }
